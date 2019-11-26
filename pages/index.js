@@ -1,17 +1,6 @@
-import styled from 'styled-components';
-import Button, { StyledButton } from '../components/button';
+import { Button } from '@theme-ui/components';
+import ThemeToggle from '../components/themeToggle';
 import Main from '../layouts/main';
-
-const ExtendedButton = styled(StyledButton)`
-  /* Adapt the colors based on primary prop */
-  background-color: green;
-  color: white;
-  font-weight: bold;
-  border-color: green;
-  font-size: 1em;
-  padding: 1em;
-  border-radius: 0px;
-`;
 
 const handlePrimaryClick = e => {
   e.preventDefault();
@@ -25,13 +14,10 @@ const handleNormalClick = e => {
 
 const Home = () => (
   <Main>
-    <Button primary handleOnClick={e => handlePrimaryClick(e)}>
-      Primary Button
-    </Button>
+    <Button variant="primary">Primary Button</Button>
+    <Button variant="secondary">Secondary Button</Button>
 
-    <Button handleOnClick={e => handleNormalClick(e)}>Normal Button</Button>
-
-    <ExtendedButton>Extended Button</ExtendedButton>
+    <ThemeToggle />
 
     <div className="hero">
       <h1 className="title">Welcome to JsLou!</h1>
@@ -54,54 +40,6 @@ const Home = () => (
         </a>
       </div>
     </div>
-
-    {/* TODO: CHANGE TO STYLED COMPONENTS */}
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
   </Main>
 );
 
