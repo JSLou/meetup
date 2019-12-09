@@ -1,16 +1,14 @@
 import Main from '../layouts/main';
 
-const handlePrimaryClick = e => {
-  e.preventDefault();
-  console.log('PRIMARY BUTTON CLICK');
-};
-
-const handleNormalClick = e => {
-  e.preventDefault();
-  console.log('PRIMARY BUTTON CLICK');
-};
-
-const Home = () => <Main>HOME PAGE</Main>;
+const Home = () => (
+  <Main
+    sx={{
+      minHeight: '500px',
+      backgroundColor: 'green',
+    }}>
+    HOME PAGE
+  </Main>
+);
 
 export default Home;
 

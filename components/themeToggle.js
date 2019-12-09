@@ -1,10 +1,12 @@
+import { Button } from '@theme-ui/components';
 import React from 'react';
 import { useColorMode } from 'theme-ui';
 
-export default props => {
+export default () => {
   const [colorMode, setColorMode] = useColorMode();
 
-  const nextMode = currentMode => {
+  const nextMode = ({ currentMode }) => {
+    console.log(currentMode);
     if (currentMode == 'light') return 'dark';
     if (currentMode == 'dark') return 'deep';
     if (currentMode == 'deep') return 'light';
@@ -13,11 +15,11 @@ export default props => {
   };
 
   return (
-    <button
+    <Button
       onClick={e => {
         setColorMode(nextMode(colorMode));
       }}>
       Toggle to {nextMode(colorMode)} Theme
-    </button>
+    </Button>
   );
 };
