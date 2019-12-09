@@ -13,13 +13,11 @@ export default props => {
   };
 
   return (
-    <header>
-      <button
-        onClick={e => {
-          setColorMode(nextMode(colorMode));
-        }}>
-        Toggle to {nextMode(colorMode)} Theme
-      </button>
-    </header>
+    <button
+      onClick={e => {
+        setColorMode(nextMode(colorMode));
+      }}>
+      Toggle to {nextMode(colorMode)} Theme
+    </button>
   );
 };

@@ -1,3 +1,4 @@
+import { Global } from '@emotion/core';
 import App from 'next/app';
 import React from 'react';
 import { ColorMode, ThemeProvider } from 'theme-ui';
@@ -9,6 +10,15 @@ export default class MyApp extends App {
     return (
       <ThemeProvider theme={theme}>
         <ColorMode />
+        <Global
+          styles={_theme => ({
+            body: {
+              margin: 0,
+              padding: 0,
+              boxSizing: 'border-box',
+            },
+          })}
+        />
         <Component {...pageProps} />
       </ThemeProvider>
     );

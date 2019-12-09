@@ -25,9 +25,20 @@ export default {
     secondary: {
       bg: 'secondary',
       color: 'background',
+      '&:hover': {
+        bg: 'text',
+      },
     },
   },
   styles: {
     ...base.styles,
+    modes: {
+      dark: {
+        ...dark.styles,
+      },
+      deep: {
+        ...deep.styles,
+      },
+    },
   },
 };
