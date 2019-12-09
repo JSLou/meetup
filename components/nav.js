@@ -11,7 +11,7 @@ const Nav = () => (
   <Container>
     <Button variant="primary">Primary Button</Button>
     <Button variant="secondary">Secondary Button</Button>
-    <ThemeToggle />
+    <ThemeToggle sx={{ marginLeft: 'auto' }} />
   </Container>
 );
 

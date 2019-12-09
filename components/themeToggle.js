@@ -2,10 +2,10 @@ import { Button } from '@theme-ui/components';
 import React from 'react';
 import { useColorMode } from 'theme-ui';
 
-export default () => {
+export default ({ sx }) => {
   const [colorMode, setColorMode] = useColorMode();
 
-  const nextMode = ({ currentMode }) => {
+  const nextMode = currentMode => {
     console.log(currentMode);
     if (currentMode == 'light') return 'dark';
     if (currentMode == 'dark') return 'deep';
@@ -16,6 +16,7 @@ export default () => {
 
   return (
     <Button
+      sx={sx}
       onClick={e => {
         setColorMode(nextMode(colorMode));
       }}>
