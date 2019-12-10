@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Button, Flex } from '@theme-ui/components';
+import { Button, Flex, Link } from '@theme-ui/components';
 import React from 'react';
 import ThemeToggle from './themeToggle';
 
@@ -9,8 +9,17 @@ const Container = styled(Flex)({
 
 const Nav = () => (
   <Container>
-    <Button variant="primary">Primary Button</Button>
-    <Button variant="secondary">Secondary Button</Button>
+    <Link href="/">
+      <Button variant="primary">Primary Button (HOME)</Button>
+    </Link>
+
+    <Link href="about">
+      <Button variant="secondary">Secondary Button (ABOUT)</Button>
+    </Link>
+
+    <Link href="meetups">
+      <Button variant="secondary">Secondary Button (Meetups)</Button>
+    </Link>
     <ThemeToggle sx={{ marginLeft: 'auto' }} />
   </Container>
 );

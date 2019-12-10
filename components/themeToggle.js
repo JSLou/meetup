@@ -6,7 +6,6 @@ export default ({ sx }) => {
   const [colorMode, setColorMode] = useColorMode();
 
   const nextMode = currentMode => {
-    console.log(currentMode);
     if (currentMode == 'light') return 'dark';
     if (currentMode == 'dark') return 'deep';
     if (currentMode == 'deep') return 'light';
