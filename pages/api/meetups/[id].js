@@ -1,4 +1,4 @@
-import { meetupById } from '../../../data/helpers';
+import { meetupById } from '../../../data';
 
 export default (req, res) => {
   const {
