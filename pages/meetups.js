@@ -1,6 +1,6 @@
 import { DualBlock } from '@components';
 import styled from '@emotion/styled';
-import Main from '../layouts/main';
+import Main from '@layouts/main';
 
 const Image = styled.img`
   width: 600px;

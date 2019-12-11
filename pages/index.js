@@ -1,5 +1,5 @@
 import { DualBlock } from '@components';
-import Main from '../layouts/main';
+import Main from '@layouts/main';
 
 const JsLou = () => {
   return <p>JsLou Logo</p>;
