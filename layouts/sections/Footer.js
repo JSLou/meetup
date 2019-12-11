@@ -1,6 +1,5 @@
+import { Container, Row } from '@components';
 import styled from '@emotion/styled';
-import Container from '../../components/Container';
-import Row from '../../components/Row';
 
 const Left = styled(Row)(props => ``);
 

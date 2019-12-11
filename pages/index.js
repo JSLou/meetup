@@ -1,4 +1,4 @@
-import DualBlock from '../components/DualBlock';
+import { DualBlock } from '@components';
 import Main from '../layouts/main';
 
 const JsLou = () => {

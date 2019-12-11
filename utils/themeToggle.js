@@ -2,7 +2,7 @@
 
 // import React from 'react';
 // import { useColorMode } from 'theme-ui';
-// import Button from '../components/Button';
+// import { Button } from '@components';
 
 // export default ({ sx }) => {
 //   const [colorMode, setColorMode] = useColorMode();

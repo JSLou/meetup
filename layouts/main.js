@@ -1,6 +1,5 @@
+import { Column, Container } from '@components';
 import styled from '@emotion/styled';
-import Column from '../components/Column';
-import Container from '../components/Container';
 import Footer from './sections/Footer';
 import Meta from './sections/Meta';
 import Nav from './sections/Nav';

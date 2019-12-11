@@ -1,5 +1,5 @@
+import { DualBlock } from '@components';
 import styled from '@emotion/styled';
-import DualBlock from '../components/DualBlock';
 import Main from '../layouts/main';
 
 const Image = styled.img`

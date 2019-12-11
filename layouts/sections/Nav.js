@@ -1,7 +1,6 @@
+import { Button, Container } from '@components';
 import Link from 'next/link';
 import React from 'react';
-import Button from '../../components/Button';
-import Container from '../../components/Container';
 
 const Nav = () => (
   <Container>

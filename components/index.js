@@ -6,7 +6,7 @@ import DualBlock from './DualBlock';
 import Row from './Row';
 import Spacer from './Spacer';
 
-export default {
+module.exports = {
   Button,
   Card,
   Column,
