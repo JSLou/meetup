@@ -1,30 +1,25 @@
 import styled from '@emotion/styled';
-import { Flex } from '@theme-ui/components';
+import Container from './Container';
 
-const Container = styled(Flex)`
+const Main = styled(Container)`
+  display: flex;
   margin-top: 0.5rem;
   width: 100%;
 `;
 
-const Left = styled(Flex)`
+const Left = styled(Container)`
   width: 50%;
-  justify-content: center;
-  align-items: center;
-  background-color: 'green';
 `;
 
-const Right = styled(Flex)`
+const Right = styled(Container)`
   width: 50%;
-  justify-content: center;
-  align-items: center;
-  background: 'blue';
 `;
 
 const DualBlock = ({ first, second }) => (
-  <Container>
-    <Left>{first}</Left>
-    <Right>{second}</Right>
-  </Container>
+  <Main>
+    <Left centerContent>{first}</Left>
+    <Right centerContent>{second}</Right>
+  </Main>
 );
 
 export default DualBlock;

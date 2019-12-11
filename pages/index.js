@@ -1,5 +1,3 @@
-// import styled from '@emotion/styled';
-// import { Flex } from '@theme-ui/components';
 import DualBlock from '../components/DualBlock';
 import Main from '../layouts/main';
 

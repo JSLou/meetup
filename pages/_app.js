@@ -1,7 +1,7 @@
 import { Global } from '@emotion/core';
+import { ThemeProvider } from 'emotion-theming';
 import App from 'next/app';
 import React from 'react';
-import { ColorMode, ThemeProvider } from 'theme-ui';
 import theme from '../theme';
 export default class MyApp extends App {
   render() {
@@ -17,7 +17,6 @@ export default class MyApp extends App {
             },
           })}
         />
-        <ColorMode />
         <Component {...pageProps} />
       </ThemeProvider>
     );

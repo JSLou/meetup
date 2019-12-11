@@ -1,34 +1,40 @@
 import styled from '@emotion/styled';
-import { Flex } from '@theme-ui/components';
-import Footer from '../components/footer';
-import Meta from '../components/meta';
-import Nav from '../components/nav';
+import Column from '../components/Column';
+import Container from '../components/Container';
+import Footer from './sections/Footer';
+import Meta from './sections/Meta';
+import Nav from './sections/Nav';
 
-const Main = styled(Flex)`
+const Main = styled(Container)(
+  props => `
   width: 100%;
+  display: flex;
   justify-content: center;
-`;
+  background-color: ${props.theme.bg.default};
+`,
+);
 
-const Container = styled(Flex)`
-  flex-direction: column;
+const FlexContainer = styled(Column)`
   min-height: 100vh;
-  min-width: 1200px;
+  width: 100%;
+  max-width: 1200px;
 `;
 
-const MainBody = styled(Flex)`
+const MainBody = styled(Container)`
   width: 100%;
   flex-grow: 1;
+  display: flex;
 `;
 
 export default ({ children }) => (
   <>
     <Meta />
     <Main>
-      <Container>
+      <FlexContainer>
         <Nav />
         <MainBody>{children}</MainBody>
         <Footer />
-      </Container>
+      </FlexContainer>
     </Main>
   </>
 );

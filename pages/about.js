@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 import DualBlock from '../components/DualBlock';
 import Main from '../layouts/main';
 
-const Image = styled.image`
-  width: 100px;
-  height: 100px;
+const Image = styled.img`
+  width: 600px;
+  height: 600px;
 `;
 
 const ImageContainer = () => {
-  return <Image src="#" alt="ABOUT IMAGE" />;
+  return <Image src="http://lorempixel.com/600/600" alt="ABOUT IMAGE" />;
 };
 
 const About = () => {
