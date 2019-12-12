@@ -8,7 +8,12 @@ module.exports = withImages({
       '@components/index.js',
     );
     config.resolve.alias['@data'] = path.join(__dirname, '@data/index.js');
-    config.resolve.alias['@layouts'] = path.join(__dirname, '@layouts');
+    config.resolve.alias['@layouts'] = path.join(
+      __dirname,
+      '@layouts/index.js',
+    );
+    config.resolve.alias['@theme'] = path.join(__dirname, '@theme/index.js');
+    // config.resolve.alias['@utils'] = path.join(__dirname, '@utils');
 
     return config;
   },

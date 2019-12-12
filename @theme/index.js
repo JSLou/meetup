@@ -5,7 +5,7 @@ breakpoints.md = breakpoints[1];
 breakpoints.lg = breakpoints[2];
 breakpoints.xl = breakpoints[3];
 
-export default {
+const theme = {
   breakpoints,
   colors: {
     default: 'black',
@@ -54,3 +54,5 @@ export default {
     },
   },
 };
+
+module.exports = { theme };

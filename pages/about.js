@@ -1,6 +1,6 @@
 import { DualBlock } from '@components';
 import styled from '@emotion/styled';
-import Main from '@layouts/main';
+import { MainLayout } from '@layouts';
 
 const Image = styled.img`
   width: 600px;
@@ -22,9 +22,9 @@ const About = () => {
 
 const AboutPage = () => {
   return (
-    <Main>
+    <MainLayout>
       <DualBlock first={<ImageContainer />} second={<About />} />
-    </Main>
+    </MainLayout>
   );
 };
 
