@@ -1,10 +1,15 @@
 import styled from '@emotion/styled';
+import { mediaQuery } from '@theme';
 import Container from './Container';
 
 const Main = styled(Container)`
   display: flex;
   margin-top: 0.5rem;
   width: 100%;
+
+  ${mediaQuery.small({
+    flexDirection: 'column',
+  })}
 `;
 
 const Left = styled(Container)`

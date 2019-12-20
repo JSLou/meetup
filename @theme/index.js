@@ -1,9 +1,19 @@
-const breakpoints = ['40em', '52em', '64em', '80em'];
+// const breakpoints = ['40em', '52em', '64em', '80em'];
+
+const breakpoints = ['320px', '576px', '768px', '992px', '1280px'];
+
 // aliases
-breakpoints.sm = breakpoints[0];
-breakpoints.md = breakpoints[1];
-breakpoints.lg = breakpoints[2];
-breakpoints.xl = breakpoints[3];
+breakpoints.xs = breakpoints[0];
+breakpoints.sm = breakpoints[1];
+breakpoints.md = breakpoints[2];
+breakpoints.lg = breakpoints[3];
+breakpoints.xl = breakpoints[4];
+
+export const mediaQuery = Object.keys(sizeAlias).reduce((acc, label) => {
+  acc[label] = `@media (min-width: ${sizes[label]}px)`;
+
+  return acc;
+}, {});
 
 const theme = {
   breakpoints,
@@ -55,4 +65,4 @@ const theme = {
   },
 };
 
-module.exports = { theme };
+export default { theme };
