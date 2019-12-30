@@ -12,7 +12,6 @@ module.exports = withImages({
       __dirname,
       '@layouts/index.js',
     );
-    config.resolve.alias['@theme'] = path.join(__dirname, '@theme/index.js');
     // config.resolve.alias['@utils'] = path.join(__dirname, '@utils');
 
     return config;

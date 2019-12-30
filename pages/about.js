@@ -7,7 +7,10 @@ const ImageContainer = () => {
     <Image
       w="600px"
       h="600px"
+      size="600px"
+      objectFit="cover"
       src="http://lorempixel.com/600/600"
+      fallbackSrc="https://via.placeholder.com/600"
       alt="ABOUT IMAGE"
     />
   );
