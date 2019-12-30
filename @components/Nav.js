@@ -1,9 +1,8 @@
-import { Button, Container } from '@components';
-import Link from 'next/link';
+import { Button, Flex, Link } from '@chakra-ui/core';
 import React from 'react';
 
 const Nav = () => (
-  <Container>
+  <Flex>
     <Link href="/">
       <Button variant="primary">Home</Button>
     </Link>
@@ -19,7 +18,7 @@ const Nav = () => (
     <Link href="#">
       <Button disabled>Disabled Button</Button>
     </Link>
-  </Container>
+  </Flex>
 );
 
 export default Nav;

@@ -1,39 +1,38 @@
-import { Column, Container } from '@components';
-import styled from '@emotion/styled';
-import Footer from './sections/Footer';
-import Meta from './sections/Meta';
-import Nav from './sections/Nav';
+import { Flex } from '@chakra-ui/core';
+import { Footer, Meta, Nav } from '../@components';
 
-const Main = styled(Container)(
-  props => `
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: ${props.theme.bg.default};
-`,
-);
+// const Main = styled(Container)(
+//   props => `
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   background-color: ${props.theme.bg.default};
+// `,
+// );
 
-const FlexContainer = styled(Column)`
-  min-height: 100vh;
-  width: 100%;
-  max-width: 1200px;
-`;
+// const FlexContainer = styled(Column)`
+//   min-height: 100vh;
+//   width: 100%;
+//   max-width: 1200px;
+// `;
 
-const MainBody = styled(Container)`
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-`;
+// const MainBody = styled(Container)`
+//   width: 100%;
+//   flex-grow: 1;
+//   display: flex;
+// `;
 
 export default ({ children }) => (
   <>
     <Meta />
-    <Main>
-      <FlexContainer>
+    <Flex justifyContent="center">
+      <Flex minH="100vh" w="100%" maxW="1200px">
         <Nav />
-        <MainBody>{children}</MainBody>
+        <Flex flexGrow={1} w="100%">
+          {children}
+        </Flex>
         <Footer />
-      </FlexContainer>
-    </Main>
+      </Flex>
+    </Flex>
   </>
 );

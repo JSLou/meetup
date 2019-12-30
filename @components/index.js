@@ -1,17 +1,11 @@
-import Button from './Button';
-import Card from './Card';
-import Column from './Column';
-import Container from './Container';
 import DualBlock from './DualBlock';
-import Row from './Row';
-import Spacer from './Spacer';
+import Footer from './Footer';
+import Meta from './Meta';
+import Nav from './Nav';
 
 module.exports = {
-  Button,
-  Card,
-  Column,
-  Container,
   DualBlock,
-  Row,
-  Spacer,
+  Footer,
+  Meta,
+  Nav,
 };

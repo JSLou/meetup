@@ -9,11 +9,12 @@
     "lint": "eslint --fix ."
   },
   "dependencies": {
-    "@emotion/core": "^10.0.22",
-    "@emotion/styled": "^10.0.23",
+    "@chakra-ui/core": "^0.5.2",
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "@styled-system/should-forward-prop": "^5.1.4",
     "@styled-system/theme-get": "^5.1.2",
-    "emotion-theming": "^10.0.19",
+    "emotion-theming": "^10.0.27",
     "next": "9.1.1",
     "next-images": "^1.2.0",
     "react": "16.10.2",
