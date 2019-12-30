@@ -11,18 +11,6 @@ breakpoints.xl = breakpoints[4];
 
 const colors = {
   ...defaultTheme.colors,
-  gray: {
-    50: '#f8faf9',
-    100: '#eaeeed',
-    200: '#dbe2e0',
-    300: '#cbd5d1',
-    400: '#b9c7c2',
-    500: '#a6b7b0',
-    600: '#8fa59c',
-    700: '#748f85',
-    800: '#597168',
-    900: '#34423d',
-  },
 };
 
 export default {

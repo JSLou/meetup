@@ -2,21 +2,23 @@ import { Button, Flex, Link } from '@chakra-ui/core';
 import React from 'react';
 
 const Nav = () => (
-  <Flex>
+  <Flex bg="gray.500" color="white">
     <Link href="/">
-      <Button variant="primary">Home</Button>
+      <Button variantColor="green">Home</Button>
     </Link>
 
     <Link href="about">
-      <Button>About</Button>
+      <Button variantColor="green">About</Button>
     </Link>
 
     <Link href="meetups">
-      <Button>Meetups</Button>
+      <Button variantColor="green">Meetups</Button>
     </Link>
 
     <Link href="#">
-      <Button disabled>Disabled Button</Button>
+      <Button variantColor="green" disabled>
+        Disabled Button
+      </Button>
     </Link>
   </Flex>
 );

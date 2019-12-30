@@ -7,8 +7,8 @@ const ImageContainer = () => {
     <Image
       w="600px"
       h="600px"
-      src="http://lorempixel.com/600/600"
-      alt="ABOUT IMAGE"
+      src="https://lorempixel.com/600/600"
+      alt="MEETUP IMAGE"
     />
   );
 };
